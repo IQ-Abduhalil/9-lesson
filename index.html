@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Payment method</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="visually-hidden">Payment method</h1>
+    </header>
+
+    <main>
+      <section>
+        <div class="container card">
+          <ul class="card__list">
+            <li class="card__list-rotate"></li>
+            <li class="card__list-rotate"></li>
+            <li class="card__list-rotate"></li>
+          </ul>
+          <h2 class="card__title">PAYMENT METHOD</h2>
+          <form class="form">
+            <label class="label">
+              <img
+                src="./img/visa1x.png"
+                width="100px"
+                height="60px"
+                srcset="./img/visa1x.png 1x, ./img/visa@2x.png 2x"
+                alt="img"
+              />
+
+              <input class="input" name="checkbox" type="radio" />
+              <p class="label__text">VISA</p>
+
+              <img
+                class="card__check-img"
+                src="./img/check1x.png"
+                srcset="./img/check1x.png 1x, ./img/check@2x.png 2x"
+                alt=""
+              />
+            </label>
+
+            <label class="label">
+              <img
+                src="./img/mastercard1x.png"
+                width="100px"
+                height="60px"
+                srcset="./img/mastercard1x.png 1x, ./img/mastercard@2x.png 2x"
+                alt="img"
+              />
+
+              <input class="input" name="checkbox" type="radio" />
+              <p class="label__text">MASTERCARD</p>
+              <img
+                class="card__check-img"
+                src="./img/check1x.png"
+                srcset="./img/check1x.png 1x, ./img/check@2x.png 2x"
+                alt=""
+              />
+            </label>
+
+            <label class="label">
+              <img
+                src="./img/maestro1x.png"
+                width="100px"
+                height="60px"
+                srcset="./img/maestro1x.png 1x, ./img/maestro@2x.png 2x"
+                alt="img"
+              />
+
+              <input class="input" name="checkbox" type="radio" />
+              <p class="label__text">MAESTRO</p>
+              <img
+                class="card__check-img"
+                src="./img/check1x.png"
+                srcset="./img/check1x.png 1x, ./img/check@2x.png 2x"
+                alt=""
+              />
+            </label>
+          </form>
+          <a href="#"
+            ><button class="label btn">
+              NEXT STEP
+              <img
+                src="./img/arrow1x.png"
+                srcset="./img/arrow1x.png 1x, ./img/arrow@2x.png 2x"
+                alt="arrow"
+              /></button
+          ></a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

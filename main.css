@@ -1,0 +1,148 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-image: url(./img/background1x.png);
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 6px;
+  margin-top: 100px;
+  width: 700px;
+  min-height: 500px;
+}
+
+.card__list {
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+}
+
+.card__list-rotate {
+  margin-top: 30px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(173, 172, 172);
+  cursor: pointer;
+}
+
+.card__list-rotate:hover {
+  background-color: black;
+}
+
+.card__title {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-style: "roboto";
+  font-size: 40px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0px 30px;
+  cursor: pointer;
+  border-top: 1px solid rgb(171, 168, 168);
+}
+
+.input {
+  display: none;
+}
+
+.label__text {
+  margin-left: 30px;
+  font-weight: 700;
+  font-style: "roboto";
+  font-size: 32px;
+  color: rgb(165, 159, 159);
+}
+
+.card__check-img {
+  display: none;
+  margin-right: 30px;
+  margin-left: auto;
+}
+
+.input:checked ~ .label__text {
+  color: black;
+}
+
+.input:checked ~ .card__check-img {
+  display: block;
+}
+
+.btn {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-style: "roboto";
+  font-size: 24px;
+  color: #fff;
+  background-color: rgb(81, 114, 206);
+  width: 700px;
+  height: 80px;
+  border: none;
+  margin-top: 30px;
+}
